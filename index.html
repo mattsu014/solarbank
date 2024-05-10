@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Bank</title>
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <img src="imagens/favicon.png" alt="Bootstrap" width="30" height="24" id="faviconnavbar">
+              <a class="navbar-brand"> Solar Bank</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page">Home</a>
+                  <a class="nav-link" href="#video">Vídeo</a>
+                  <a class="nav-link" href="imagens/documentos/cartilha.pdf">Cartilha</a>
+                  <a class="nav-link" href="#materiais">Materiais</a>
+                  <a class="nav-link" href="#membros">Nossa equipe</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+  </header>
+
+  <section class="imagens-home">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="imagens/carousel/image1.png" class="d-block w-100" alt="image1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Separando os materiais</h5>
+                  <p>Multimetro, placas microcontroladoras, ferro de solda e pilhas</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/carousel/image2.png" class="d-block w-100" alt="image2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fazendo o site</h5>
+                  <p>Construindo o HTML/CSS do site</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="imagens/carousel/image3.png" class="d-block w-100" alt="image3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Testando o funcionamento das pilhas</h5>
+                  <p>Utilizando essa placa, estamos verificando o funconamento das pilhas reaproveitadas</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+  </section> <br>
+
+  <h1 class="display-4" id="atualizacoesprojeto">Atualizações do projeto</h1>
+  <section class="posts">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <div class="col">
+        <div class="card">
+          <img src="imagens/posts/powerpointimagem.png" class="card-img-top" alt="Teste das pilhas">
+          <div class="card-body">
+            <h5 class="card-title">Projeto base da Solar-Bank</h5>
+            <p class="card-text">Para o nosso trabalho de Experimentos e Desafios da Engenharia decidimos escolher o carregador portatil devido ao desafio...</p><br>
+            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#slidemodal">Ler mais</button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="slidemodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Projeto base da Solar-Bank</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="imagens/posts/powerpointimagem.png" class="card-img-top" alt="Objetivo">
+                    <p class="modal-txt">Para o nosso trabalho de Experimentos e Desafios da Engenharia decidimos escolher o carregador portatil devido ao desafio e as novas fronteiras que ele vai porporcionar, então logo mostramos a nossa ideia base para o avaliador Oyrton Azevedo.</p>
+                    <p class="modal-txt">O trabalho consiste em montar um carregador portatil de maneira simples e ensinar as outras pessoas como monta-lo sem ter conhecimentos de eletrônica, por meio de um vídeo e uma cartilha, algo bem desafiador, porém, não satisfeitos com o desafio que foi nos oferecido, a nossa equipe decidiu ir além, decidimos criar um site para uma melhor explicação para as pessoas sobre o nosso projeto.</p>
+                    <p class="modal-txt">Segue os slides piloto apresentados para o avaliador Oyrton e para a turma de Engenharia 2024.1 da Unifor</p>
+                    <p class="modal-txt"><a href="imagens/documentos/slidepilotoPowerpoint.pdf" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Slide em pdf</a></p>
+                    <p class="modal-txt"><a href="imagens/documentos/slidepilotoPowerpoint.pptx" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Slide em pptx</a></p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img src="imagens/posts/sociedadeConectada.png" class="card-img-top" alt="Objetivo">
+          <div class="card-body">
+            <h5 class="card-title">Sociedade Conectada? Solar-Bank?</h5>
+          <p class="card-text">“A sociedade conectada:
+              Termo empregado para designar o uso da tecnologia da informação e telecomunicação para a sociedade se interagir...</p><br>
+
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Ler mais</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Sociedade Conectada? Solar-Bank?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="imagens/posts/sociedadeConectada.png" class="card-img-top" alt="Objetivo">
+                <p class="modal-txt">“A sociedade conectada:
+                  Termo empregado para designar o uso da tecnologia da informação e telecomunicação para a sociedade se interagir, compartilhar ideias e conhecimentos. É a estrutura social organizada através da rede de informações processadas eletronicamente.”</p>
+
+                  <p class="modal-txt">A iniciativa “Solar-bank” é auxiliar os usuários com conhecimentos básicos de eletrônica a construir um carregador portátil, que é algo quase indispensável na nossa sociedade conectada.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </div>
+      
+        <div class="col">
+          <div class="card">
+            <img src="imagens/posts/autocad.png" class="card-img-top" alt="autocad">
+            <div class="card-body">
+              <h5 class="card-title">Projeto do AutoCad</h5>
+              <p class="card-text">Enquanto as peças do projeto Solar-Bank não chegam, a nossa esquipe está planejando como iremos fazer a "case" do nosso produto...</p><br>
+              <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#secondmodal">Ler mais</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="secondmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Projeto no Autocad</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="imagens/posts/autocad.png" class="card-img-top" alt="Objetivo">
+                      <p class="modal-txt">Enquanto as peças do projeto Solar-Bank não chegam, a nossa esquipe está planejando como iremos fazer a "case" do nosso produto, utilizando os nossos conhecimentos adquiridos nas aulas de Expressão Grafica</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="imagens/posts/pilhas.png" class="card-img-top" alt="Teste das pilhas">
+            <div class="card-body">
+              <h5 class="card-title">Testando as Pilhas</h5>
+              <p class="card-text">Com a intenção de economizar ao máximo, a nossa equipe decidiu testar as pilhas de aparelhos comuns que possuimos nas nossas casas...</p><br>
+              <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#thirdmodal">Ler mais</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="thirdmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Testando as Pilhas</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="imagens/posts/pilhas.png" class="card-img-top" alt="Objetivo">
+                      <p class="modal-txt">Com a intenção de economizar ao máximo, a nossa equipe decidiu testar as pilhas de aparelhos comuns que possuimos nas nossas casas</p>
+                      <p class="modal-txt">Dentre esses aparelhos, pegamos pilhas de baterias de notebooks antigos, lanternas recarregaveis, e um carregador portatil com a placa queimada</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="imagens/posts/prototipagem.png" class="card-img-top" alt="Teste das pilhas">
+            <div class="card-body">
+              <h5 class="card-title">Os equipamentos chegaram!!!</h5>
+              <p class="card-text">Os nossos equipamentos do Power-Bank chegaram, agora nós com a ajuda do tecnico do laboratório da Unifor vamos...</p><br>
+              <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#fourthmodal">Ler mais</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="fourthmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Os equipamentos chegaram!!!</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="imagens/posts/prototipagem.png" class="card-img-top" alt="Objetivo">
+                      <p class="modal-txt">Os nossos equipamentos do Power-Bank chegaram, agora nós com a ajuda do tecnico do laboratório da Unifor vamos analisar as peças para não correr risco de queima-las</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="imagens/posts/codepost.png" class="card-img-top" alt="Teste das pilhas">
+            <div class="card-body">
+              <h5 class="card-title">Fazendo o site da Solar-Bank</h5>
+              <p class="card-text">A ideia de fazer um site apenas para postar as atualizações sobre o nosso trabalho parecia ser uma ideia meio desafiadora no...</p><br>
+              <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#fivethmodal">Ler mais</button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="fivethmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Fazendo o site da Solar-Bank</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="imagens/posts/codepost.png" class="card-img-top" alt="Objetivo">
+                      <p class="modal-txt">A ideia de fazer um site apenas para postar as atualizações sobre o nosso trabalho parecia ser uma ideia meio desafiadora no inicio para o programador da equipe, pois mesmo tendo experiencia (pouca, mas tendo) com front-end, ele nunca gostou da parte "visual" das coisas, porém o que auxiliou muito foi a utilização da biblioteca Bootstrap, que conseguiu fazer com que o site pudesse ser feito em menos tempo, sem prejudicar o foco principal do trabalho, o Powerbank.</p>
+                      <img src="imagens/posts/bootstraplogo.png" alt="Bootstrap" width="30" height="24" class="modal-txt">
+                      <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Documentação do Bootstrap</a>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section> <br>
+
+  <h1 class="display-4"  id="materiais">Onde Compramos os materiais?</h1>
+  <section class="products">
+    <p class="fs-4" style="text-align: center;">Para você que se interessa em comprar os materiais exatos que utilizamos nesse tutorial, veja onde compra-los</p><br>
+
+    <div class="card-group">
+      <div class="card">
+        <img src="imagens/posts/compradosprodutos.png" class="card-img-top" alt="placa do power bank">
+        <div class="card-body">
+          <h5 class="card-title">Placa do carregadora de bateria de lítio</h5>
+          <p class="card-text">A mesma placa utilizada no nosso projeto do carregador portatil</p> <br>
+          <p class="fw-bold">R$4,99</p> 
+          <p class="text-decoration-line-through">R$33,02</p>
+
+          <a href="https://pt.aliexpress.com/item/1005006438450817.html?srcSns=sns_Copy&spreadType=socialShare&bizType=ProductDetail&social_params=21454496201&aff_fcid=bceb0dd1465246698ae82e19667056e0-1715252864868-09657-_mPnnVWA&tt=MG&aff_fsk=_mPnnVWA&aff_platform=default&sk=_mPnnVWA&aff_trace_key=bceb0dd1465246698ae82e19667056e0-1715252864868-09657-_mPnnVWA&shareId=21454496201&businessType=ProductDetail&platform=AE&terminal_id=e2646dacb9874265b2546b88e7168fee&afSmartRedirect=y"><button type="button" class="btn btn-outline-danger">Comprar</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="imagens/posts/fioscomprar.png" class="card-img-top" alt="pilhas para utilizar no powerbank">
+        <div class="card-body">
+          <h5 class="card-title">Fios</h5>
+          <p class="card-text">Aqui onde você pode comprar os fios para colocar no seu powerbank!!!</p> <br>
+          <p class="fw-bold">R$ 0,80</p><br>
+
+          <a href="https://www.autocorerobotica.com.br/cabinho-jumper-para-protoboard-20cm-vermelho"><button type="button" class="btn btn-outline-danger">Comprar</button></a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="imagens/posts/pilhascomprar.png" class="card-img-top" alt="placa do power bank">
+        <div class="card-body">
+          <h5 class="card-title">Pilhas de lítio</h5>
+          <p class="card-text">Caso você queira comprar pilhas de lítio novas para o seu power-bank, você pode comprar aqui</p> <br>
+          <p class="fw-bold">R$11,15</p> 
+          <p class="text-decoration-line-through">R$23,27</p>
+  
+          <a href="https://pt.aliexpress.com/item/32821524948.html?spm=a2g0o.productlist.main.9.12ad65d41Blf4x&algo_pvid=5be2cb55-8ccb-49e7-b652-508b320b5301&aem_p4p_detail=202405090431134637410838563030000100930&algo_exp_id=5be2cb55-8ccb-49e7-b652-508b320b5301-4&pdp_npi=4%40dis%21BRL%2123.27%2111.15%21%21%214.34%212.08%21%40210321dc17152542731695701e3a52%2164857593203%21sea%21BR%210%21AB&curPageLogUid=WjJj827E2bcw&utparam-url=scene%3Asearch%7Cquery_from%3A&search_p4p_id=202405090431134637410838563030000100930_1"><button type="button" class="btn btn-outline-danger">Comprar</button></a>
+        </div>
+      </div>
+  </section>
+
+  <section id="video" style="text-align: center;">
+    <h1 class="display-4" id="atualizacoesprojeto">Vídeo:</h1> <br>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalVideo">Vídeo ensinando a montar o carregador</button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalVideo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">**Título do vídeo**</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/DmHAyQCN0mM?si=hT0kGfZi5KYOic1U"  title="YouTube video" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="text-center" id="membros" style="display: flexbox; text-align: center;">
+    <section class="section-team">
+      <div class="container">
+        <!-- Start Header Section -->
+        <div class="row justify-content-center text-center">
+          <div class="col-md-8 col-lg-6">
+            <div class="header-section">
+              <h2 class="title">Nossa equipe:</h2>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <!-- Start Single Person -->
+          <div class="col-sm-6 col-lg-3 col-xl-4">
+            <div class="single-person">
+              <div class="person-image">
+                <img src="imagens/footer/fotoMateus.jpeg" alt="Mateus Valentim">
+                <span class="icon">💻</span>
+              </div>
+              <div class="person-info">
+                <h3 class="full-name">Mateus Valentim</h3>
+                <span class="speciality">Eng. da Computação</span> <br>
+                <a href="https://github.com/mattsu014"><img src="imagens/footer/github.png" alt="Bootstrap" width="30" height="30" id="faviconnavbar"></a>
+                <a href="https://www.instagram.com/mattsu014/"><img src="imagens/footer/instagram.png" alt="Bootstrap" width="32" height="32" id="faviconnavbar"></a>
+              </div>
+            </div>
+          </div>
+          <!-- / End Single Person -->
+          <!-- Start Single Person -->
+          <div class="col-sm-6 col-lg-3 col-xl-4">
+            <div class="single-person">
+              <div class="person-image">
+                <img src="imagens/footer/semfoto.jpg" alt="Guilherme Otavio">
+                <span class="icon">⚡</span>
+              </div>
+              <div class="person-info">
+                <h3 class="full-name">Guilherme Otavio</h3>
+                <span class="speciality">Eng. Elétrica</span> <br>
+                <a href=""><img src="imagens/footer/instagram.png" alt="Bootstrap" width="32" height="32" id="faviconnavbar"></a>
+              </div>
+            </div>
+          </div>
+          <!-- / End Single Person -->
+          <!-- Start Single Person -->
+          <div class="col-sm-6 col-lg-3 col-xl-4">
+            <div class="single-person">
+              <div class="person-image">
+                <img src="imagens/footer/semfoto.jpg" alt="">
+                <span class="icon">⚒️</span>
+              </div>
+              <div class="person-info">
+                <h3 class="full-name">Anderson Martins</h3>
+                <span class="speciality">Eng. Civil</span> <br>
+                <a href=""><img src="imagens/footer/instagram.png" alt="Bootstrap" width="32" height="32" id="faviconnavbar"></a>
+              </div>
+            </div>
+          </div>
+          <!-- / End Single Person -->
+        </div>
+      </div>
+    </section>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
